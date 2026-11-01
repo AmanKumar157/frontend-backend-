@@ -16,7 +16,11 @@ const Todo = new Schema({
 
 })
 
-const UseModel = mongoose.model('users', User);
+const UserModel = mongoose.model('users', User);
 const TodoModel = mongoose.model('todos',Todo);
 
 //moongoose.model let us to import data in specific collection  with specific Schema
+module.exports = {
+    UserModel: UserModel,
+    TodoModel: TodoModel    
+}
